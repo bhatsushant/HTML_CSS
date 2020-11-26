@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block, Inline & Inline-Block Displays</title>
+</head>
+<style>
+    body {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .menu li {
+        display: inline;
+    }
+
+    .menu li a {
+        padding: 20px;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+    }
+
+    .box {
+        box-sizing: border-box;
+        width: 33%;
+        display: inline-block;
+        background: #f4f4f4;
+        padding: 10px;
+        margin-top: 10px;
+    }
+</style>
+<body>
+    <ul class="menu">
+        <li><a href="#">Technology</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Fashion</a></li>
+        <li><a href="#">Sports</a></li>
+    </ul>
+
+    <img src="./images/leaf.png" alt="Leaf Image">
+    
+    <div class="box">
+        <h3>Box One</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quam sequi vitae nisi nostrum ratione in praesentium maiores ea iure!</p>
+    </div>
+    <div class="box">
+        <h3>Box Two</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quam sequi vitae nisi nostrum ratione in praesentium maiores ea iure!</p>
+    </div>
+    <div class="box">
+        <h3>Box Three</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quam sequi vitae nisi nostrum ratione in praesentium maiores ea iure!</p>
+    </div>
+</body>
+</html>
