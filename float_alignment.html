@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float & Alignment</title>
+    <style>
+        * {
+            box-sizing: border-box; /* Prevents from adding extra paading after the width. This property adds paading by keeping the specified width intact by pushing the elements inside*/
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6em;
+        }
+
+        .box {
+            background: #f4f4f4;
+            border: 2px solid #333;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        .container {
+            max-width: 960px; /* If only width property is used instead of max-width the site doesn't become responsive */
+            margin: 30px auto; /* the 'auto' value of the margin property aligns the elements in the center by assigning equal margin on left and right side */
+        }
+
+        .clr {
+            clear: both;
+        }
+
+        #box-2 {
+            float: left;
+            width: 68%;
+        }
+
+        #box-3 {
+            float: right;
+            width: 30%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box-1" class="box">
+            <h3>Box One</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut nobis impedit cupiditate reiciendis magni atque corrupti esse adipisci voluptatibus repudiandae!</p>
+        </div>
+        <div id="box-2" class="box">
+            <h3>Box Two</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut nobis impedit cupiditate reiciendis magni atque corrupti esse adipisci voluptatibus repudiandae!</p>
+        </div>
+        <div id="box-3" class="box">
+            <h3>Box Three</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut nobis impedit cupiditate reiciendis magni atque corrupti esse adipisci voluptatibus repudiandae!</p>
+        </div>
+        <div class="clr"></div>
+        <div id="box-4" class="box">
+            <h3>Box Four</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut nobis impedit cupiditate reiciendis magni atque corrupti esse adipisci voluptatibus repudiandae!</p>
+        </div>
+    </div>
+</body>
+</html>
