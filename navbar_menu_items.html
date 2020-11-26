@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar & Menu Items</title>
+</head>
+<style>
+    body {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        line-height: 1.6em;
+    }
+
+    /* Navbar Styling */
+
+    .navbar {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background: #4c6ca0;
+        border-radius: 5px;
+        overflow: auto;
+    }
+
+    .navbar li {
+        float: left;
+    }
+
+    .navbar li a {
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+        color: #fff;
+    }
+
+    .navbar li a:hover {
+        background-color: #446190;
+        color: #f4f4f4;
+    }
+
+    /* Side Menu Styling */
+    .menu {
+        border: 2px solid #f4f4f4;
+        font-size: 18px;
+        border-radius: 5px;
+        padding: 20px;
+        width: 300px;
+        list-style: none;
+    }
+
+    .menu li {
+        border-bottom: 2px dotted #f4f4f4;
+    }
+
+    .menu li:last-child {
+        border-bottom: none;
+    }
+
+    .menu li a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    .menu li a:hover {
+        color: coral;
+    }
+
+</style>
+<body>
+    <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+    <br>
+    <br>
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+</body>
+</html>
