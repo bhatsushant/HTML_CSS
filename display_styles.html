@@ -20,7 +20,7 @@
 
     img {
         display: block;
-        margin: auto;
+        margin: auto; /* margin: auto only works on elements with display property set to block. It doesn't work on inline elements. As <img> is an inline element, first it's display needs to be set to needs to be set to block and then only margin: auto will work to center the element*/
     }
 
     .box {
