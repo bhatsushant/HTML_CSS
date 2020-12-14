@@ -1,0 +1,30 @@
+<!-- 'rem' units are always a better choice to use rather tham 'em' units as 'rem' units take the size of root element (the html tag in this case) as a reference to set font-sizes of the tags. I nthe below case as we have mentioned the size of the html tag as 20px the sizes of the box-1 element as well as the nested elements will be relative to the root html tag as we have used 'rem' units. So the size of the box-1 div would be 40px(20*2) and the size of the p tag would be 36px(20*1.6) and the line-height would be 37px(20*1.7). Here even though the p tag is nested inside the box-1 div, it would set it's size according to the root html tag only and not it's parent box-1 div unlike when we use the 'em' units. This makes using the 'rem' units a far better choice to maintain consistency and for ease of usage. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REM units</title>
+    <style>
+        html {
+            font-size: 20px;
+        }
+
+        #box-1 h3 {
+            font-size: 2rem;
+        }
+
+        #box-1 p {
+            font-size: 1.6rem;
+            line-height: 1.7rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="box-1">
+        <h3>Box One</h3>
+        <p>Nesciunt facilis dignissimos maiores expedita iusto, quis vero aspernatur rerum mollitia, nisi alias. Quas illo repellendus nostrum deserunt hic nobis.</p>
+    </div>
+</body>
+</html>
