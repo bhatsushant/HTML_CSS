@@ -1,0 +1,70 @@
+<!-- The 100vh mentioned below will take the full height of the page and even if there is any other content below it will still show only the element which has 100vh mentioned and all other content will be visible on scroll -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vh & vw units</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    header {
+        background: url('https://source.unsplash.com/daily') no-repeat center center/cover;
+        /* color: #fff; */
+        height: 100vh; /* This property will ensure that the viewport height always occpies the entire page as by default the header does not occupy the full page*/
+        /* width: 50vw; */ /* This property occupies only half the width of the page*/
+        text-align: center;
+        padding-top: 15rem;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    header p {
+        margin: 1rem 0;
+    }
+
+    .btn {
+        display: inline-block;
+        text-decoration: none;
+        border: none;
+        background: #f4f4f4;
+        color: #333;
+        padding: 0.75rem 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    @media(max-height: 450px) {
+        header {
+            padding: 2rem;
+        }
+    }
+
+</style>
+<body>
+    <header>
+        <h1>Welcome To Our Website</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, hic. Voluptate, voluptatibus sapiente nesciunt eveniet dignissimos neque voluptas necessitatibus? Facilis.</p>
+        <a href="#" class="btn">Find Out More</a>
+    </header>
+
+    <section>
+        <h1>About our Company</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus reiciendis quam, nesciunt sapiente ipsum expedita repellendus omnis. Iste vero, cupiditate deserunt necessitatibus assumenda illum placeat reprehenderit quaerat. Dolorum quam ullam, hic dicta velit cum eum dolores facilis dignissimos, enim reprehenderit explicabo aspernatur maxime laudantium sint error modi beatae aperiam. Adipisci!</p>
+    </section>
+</body>
+</html>
