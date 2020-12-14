@@ -1,0 +1,49 @@
+<!-- By default the html tag has a font-size of 16px. EMs and REMs are a way to apply sizes to elements based on the parent or root tag. 'em' units apply font-sizes to tags based on the size of it's parent element. For eg. as shown in the below example the p tag inside the box-1 element will have a font-size of 20x1.5 times the size as the size of the parent element of the p tag (in this case the box-1 div) is 20px. The confusing part or the disadvantage of this style is that the nested elements show weird behavious as evidenced by the font-sizes of the p tag and the ul tags. Here the more the nested element the bigger it's size. The innermost nested ul tag will keep on increasing as it's parent element is the ul tag above it which itself references the above tags for increasing it's font-size or the padding in this case which should be 20px but it is surprisingly larger than 20px as it weirdly references the font-size attribute of the p tag instead of referencing the actual parent element (in this case the #box-1 div). It's better to avoid the 'em' units altogether and use the 'rem' units instead -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EM Units</title>
+    <style>
+        #box-1 {
+            font-size: 20px;
+        }
+
+        #box-1 p {
+            font-size: 1.5em;
+            padding: 1.2em;
+        }
+
+        #box-1 ul {
+            font-size: 1.3em;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box-1">
+        <h3>Box One</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, excepturi. Cumque dolorem voluptatem expedita veritatis! Porro ab non cupiditate mollitia?</p>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ul>
+            </ul>
+        </ul>
+    </div>
+</body>
+</html>
